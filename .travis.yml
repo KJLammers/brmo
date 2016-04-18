@@ -53,6 +53,7 @@ script:
   # test of javadoc compliant is met java-8 strict checks
   - if [ "$TRAVIS_JDK_VERSION" == oraclejdk8 ]; then
          mvn javadoc:javadoc;
+         mvn javadoc:test-javadoc;
     fi
 
 # after_success:
